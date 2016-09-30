@@ -1,14 +1,14 @@
-{% set version = "1.14" %}
-{% set hash_type = "md5" %}
-{% set hash = "958699a0487226505470e984f1843329" %}
+{% set version = "1.15.0" %}
+{% set hash_type = "sha256" %}
+{% set hash = "6238395f8bd050f9288a3b10f34330edece80f4424cf2b4204d6e7d622f0f00b" %}
 
 package:
   name: pytest-xdist
   version: {{ version }}
 
 source:
-  fn: pytest-xdist-{{ version }}.zip
-  url: https://pypi.io/packages/source/p/pytest-xdist/pytest-xdist-{{ version }}.zip
+  fn: pytest-xdist-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pytest-xdist/pytest-xdist-{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
 build:
