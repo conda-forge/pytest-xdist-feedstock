@@ -11,6 +11,18 @@ Summary: py.test xdist plugin for distributed testing and loop-on-failing modes
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-xdist-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-xdist-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-xdist-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-xdist-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-xdist/badges/version.svg)](https://anaconda.org/conda-forge/pytest-xdist)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-xdist/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-xdist)
+
 Installing pytest-xdist
 =======================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pytest-xdist` available on your p
 ```
 conda search pytest-xdist --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-xdist-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-xdist-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-xdist-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-xdist-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-xdist/badges/version.svg)](https://anaconda.org/conda-forge/pytest-xdist)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-xdist/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-xdist)
 
 
 Updating pytest-xdist-feedstock
