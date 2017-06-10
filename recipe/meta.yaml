@@ -1,6 +1,6 @@
-{% set version = "1.16.0" %}
+{% set version = "1.17.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "42e5a1e5da9d7cff3e74b07f8692598382f95624f234ff7e00a3b1237e0feba2" %}
+{% set hash = "e7e48c111677af23078b1ed23501e493e12c4b6d91657f6884a64e4ce0f14144" %}
 
 package:
   name: pytest-xdist
@@ -20,14 +20,14 @@ requirements:
     - python
     - execnet >=1.1
     - py >=1.4.22
-    - pytest >=2.4.2
+    - pytest >=2.7.0
     - setuptools
     - setuptools_scm
   run:
     - python
     - execnet >=1.1
     - py >=1.4.22
-    - pytest >=2.4.2
+    - pytest >=2.7.0
     - setuptools
 
 test:
