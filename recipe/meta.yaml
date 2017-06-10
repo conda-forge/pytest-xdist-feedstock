@@ -1,6 +1,6 @@
-{% set version = "1.17.0" %}
+{% set version = "1.17.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "e7e48c111677af23078b1ed23501e493e12c4b6d91657f6884a64e4ce0f14144" %}
+{% set hash = "525d3708d6d3488dc5e47eac3f569484ca171e9af173ec2827e523a1b3d65f92" %}
 
 package:
   name: pytest-xdist
