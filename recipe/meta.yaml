@@ -1,7 +1,7 @@
 {% set name = "pytest-xdist" %}
-{% set version = "1.18.1" %}
+{% set version = "1.18.2" %}
 {% set hash_type = "sha256" %}
-{% set hash = "346ae327f12be3747fb273652cf393fab7373536d7fadee6c44c76fa42ede423" %}
+{% set hash = "10468377901b80255cf192c4603a94ffe8b1f071f5c912868da5f5cb91170dae" %}
 
 package:
   name: {{ name }}
