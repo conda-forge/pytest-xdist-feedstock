@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -30,6 +30,7 @@ requirements:
     - py >=1.4.22
     - pytest >=3.0.0
     - setuptools
+    - pytest-forked
 
 test:
   imports:
