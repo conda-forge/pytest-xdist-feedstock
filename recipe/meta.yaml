@@ -1,7 +1,7 @@
 {% set name = "pytest-xdist" %}
-{% set version = "1.19.0" %}
+{% set version = "1.19.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "c066d27f884cc6c8d1d384176ace6494376d4a6cc1602b79489e6761879acd2a" %}
+{% set hash = "237a0c30056d539de723a1461cf2817c04a9abc90ee1fe51ddfaecc643ef3022" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
