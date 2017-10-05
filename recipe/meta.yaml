@@ -1,7 +1,7 @@
 {% set name = "pytest-xdist" %}
-{% set version = "1.20.0" %}
+{% set version = "1.20.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "7924d45c2430191fe3679a58116c74ceea13307d7822c169d65fd59a24b3a4fe" %}
+{% set hash = "433e82f9b34986a4e4b2be38c60e82cca3ac64b7e1b38f4d8e3e118292939712" %}
 
 package:
   name: {{ name }}
@@ -15,21 +15,16 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
     - python
-    - execnet >=1.1
-    - py >=1.4.22
-    - pytest >=3.0.0
-    - setuptools
     - setuptools_scm
   run:
     - python
     - execnet >=1.1
-    - py >=1.4.22
     - pytest >=3.0.0
-    - setuptools
     - pytest-forked
 
 test:
