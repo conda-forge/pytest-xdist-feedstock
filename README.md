@@ -14,12 +14,15 @@ Summary: py.test xdist plugin for distributed testing and loop-on-failing modes
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pytest-xdist-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pytest-xdist-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-xdist/badges/version.svg)](https://anaconda.org/conda-forge/pytest-xdist)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-xdist/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-xdist)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest--xdist-green.svg)](https://anaconda.org/conda-forge/pytest-xdist) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest-xdist.svg)](https://anaconda.org/conda-forge/pytest-xdist) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest-xdist.svg)](https://anaconda.org/conda-forge/pytest-xdist) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest-xdist.svg)](https://anaconda.org/conda-forge/pytest-xdist) |
 
 Installing pytest-xdist
 =======================
