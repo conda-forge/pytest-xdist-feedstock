@@ -5,7 +5,7 @@ Home: https://github.com/pytest-dev/pytest-xdist
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: py.test xdist plugin for distributed testing and loop-on-failing modes
 
