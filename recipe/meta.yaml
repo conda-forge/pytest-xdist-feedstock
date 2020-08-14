@@ -15,15 +15,15 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
     - setuptools_scm
   run:
-    - python
+    - python >=3.5
     - execnet >=1.1
-    - pytest >=4.4.0
+    - pytest >=6.0.0
     - pytest-forked
-    - six
+    - psutil >=3.0
 
 test:
   imports:
