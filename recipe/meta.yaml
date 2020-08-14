@@ -1,4 +1,4 @@
-{% set version = "1.34.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: pytest-xdist
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-xdist/pytest-xdist-{{ version }}.tar.gz
-  sha256: 340e8e83e2a4c0d861bdd8d05c5d7b7143f6eea0aba902997db15c2a86be04ee
+  sha256: 3217b1f40290570bf27b1f82714fc4ed44c3260ba9b2f6cde0372378fc707ad3
 
 build:
   number: 0
