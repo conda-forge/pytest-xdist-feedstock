@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.6
     - execnet >=1.1
-    - pytest >=6.0.0
+    - pytest >=6.2.0
     - pytest-forked
   run_constrained:
     - psutil >=3.0
