@@ -1,4 +1,4 @@
-{% set version = "2.5.0" %}
+{% set version = "3.0.2" %}
 
 package:
   name: pytest-xdist
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-xdist/pytest-xdist-{{ version }}.tar.gz
-  sha256: 4580deca3ff04ddb2ac53eba39d76cb5dd5edeac050cb6fbc768b0dd712b4edf
+  sha256: 688da9b814370e891ba5de650c9327d1a9d861721a524eb917e620eec3e90291
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - python >=3.6
     - execnet >=1.1
     - pytest >=6.2.0
-    - pytest-forked
   run_constrained:
     - psutil >=3.0
 
