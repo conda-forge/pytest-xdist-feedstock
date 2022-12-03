@@ -1,4 +1,4 @@
-{% set version = "3.0.2" %}
+{% set version = "3.1.0" %}
 
 package:
   name: pytest-xdist
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-xdist/pytest-xdist-{{ version }}.tar.gz
-  sha256: 688da9b814370e891ba5de650c9327d1a9d861721a524eb917e620eec3e90291
+  sha256: 40fdb8f3544921c5dfcd486ac080ce22870e71d82ced6d2e78fa97c2addd480c
 
 build:
   number: 0
@@ -15,11 +15,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.7
     - execnet >=1.1
     - pytest >=6.2.0
   run_constrained:
