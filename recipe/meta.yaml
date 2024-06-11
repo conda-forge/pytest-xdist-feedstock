@@ -1,27 +1,28 @@
-{% set version = "3.5.0" %}
+{% set version = "3.6.1" %}
 
 package:
   name: pytest-xdist
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pytest-xdist/pytest-xdist-{{ version }}.tar.gz
-  sha256: cbb36f3d67e0c478baa57fa4edc8843887e0f6cfc42d677530a36d7472b32d8a
+  url: https://pypi.io/packages/source/p/pytest-xdist/pytest_xdist-{{ version }}.tar.gz
+  sha256: ead156a4db231eec769737f57668ef58a2084a34b2e55c4a8fa20d861107300d
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
-    - python >=3.7
     - pip
-    - setuptools_scm
+    - python >=3.8
+    - setuptools >=6.2
+    - setuptools-scm >=6.2.3
   run:
-    - python >=3.7
-    - execnet >=1.1
-    - pytest >=6.2.0
+    - execnet >=2.1
+    - pytest >=7.0.0
+    - python >=3.8
   run_constrained:
     - psutil >=3.0
 
@@ -30,7 +31,10 @@ test:
     - xdist
   files:
     - dummy_test.py
+  requires:
+    - pip
   commands:
+    - pip check
     - pytest -n2 dummy_test.py
 
 about:
