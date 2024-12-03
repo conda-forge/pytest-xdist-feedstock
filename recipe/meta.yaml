@@ -5,24 +5,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pytest-xdist/pytest_xdist-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pytest-xdist/pytest_xdist-{{ version }}.tar.gz
   sha256: ead156a4db231eec769737f57668ef58a2084a34b2e55c4a8fa20d861107300d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=61.2
     - setuptools-scm >=6.2.3
   run:
     - execnet >=2.1
     - pytest >=7.0.0
-    - python >=3.8
+    - python >={{ python_min }}
   run_constrained:
     - psutil >=3.0
 
@@ -33,6 +33,7 @@ test:
     - dummy_test.py
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - pytest -n2 dummy_test.py
